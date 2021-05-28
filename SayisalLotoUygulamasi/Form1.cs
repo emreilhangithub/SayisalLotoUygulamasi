@@ -68,8 +68,16 @@ namespace SayisalLotoUygulamasi
             else
             {
                 textBox4.BackColor = Color.Red;
-            }           
+            }
 
+            if (textBox1.Text == label1.Text
+                  && textBox2.Text == label2.Text
+                  && textBox3.Text == label3.Text
+                  && textBox4.Text == label4.Text
+                )
+            {
+                MessageBox.Show("Tebrikler Kazandınız");
+            }
         }
     }
 }
