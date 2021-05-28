@@ -17,6 +17,8 @@ namespace SayisalLotoUygulamasi
             InitializeComponent();
         }
 
+        int skor = 0;
+
         private void button1_Click(object sender, EventArgs e)
         {
             Random rast = new Random();
@@ -76,6 +78,8 @@ namespace SayisalLotoUygulamasi
                   && textBox4.Text == label4.Text
                 )
             {
+                skor++;
+                label6.Text = skor.ToString();
                 MessageBox.Show("Tebrikler Kazandınız");
             }
         }
